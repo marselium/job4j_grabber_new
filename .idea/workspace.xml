@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="126d7094-67f3-45b3-950b-a81d6f73d373" name="Changes" comment="1. Quartz [#175122 #466977]">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="126d7094-67f3-45b3-950b-a81d6f73d373" name="Changes" comment="1.1. Job c параметрами [#260360 #467223]">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/grabber/service/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/grabber/service/SchedulerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/grabber/service/SuperJobGrab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/grabber/stores/MemStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/grabber/stores/Store.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/quartz/AlertRabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/quartz/AlertRabbit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit$Rabbit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit$Rabbit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/quartz/AlertRabbit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/grabber/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/grabber/model/Post.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -116,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1762106360526</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.1. Job c параметрами [#260360 #467223]">
+      <created>1762213991332</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762213991332</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +146,8 @@
     <MESSAGE value="Модель данных - Post. [#285211 #474712]" />
     <MESSAGE value="Схема таблицы Post [#1731 #485539]" />
     <MESSAGE value="1. Quartz [#175122 #466977]" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Quartz [#175122 #466977]" />
+    <MESSAGE value="1.1. Job c параметрами [#260360 #467223]" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1. Job c параметрами [#260360 #467223]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
