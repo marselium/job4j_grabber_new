@@ -4,12 +4,13 @@ import org.apache.log4j.Logger;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import ru.job4j.grabber.stores.Store;
+
 import static org.quartz.JobBuilder.newJob;
 import static org.quartz.SimpleScheduleBuilder.simpleSchedule;
 import static org.quartz.TriggerBuilder.newTrigger;
 
-public class SchedulerManager {
-    private static final Logger log = Logger.getLogger(SchedulerManager.class);
+public class SchedulerManager implements AutoCloseable {
+    private static final Logger LOG = Logger.getLogger(SchedulerManager.class);
     private Scheduler scheduler;
 
     public void init() {
@@ -17,7 +18,7 @@ public class SchedulerManager {
             scheduler = StdSchedulerFactory.getDefaultScheduler();
             scheduler.start();
         } catch (SchedulerException se) {
-            log.error("When init scheduler", se);
+            LOG.error("When init scheduler", se);
         }
     }
 
@@ -39,7 +40,7 @@ public class SchedulerManager {
 
             scheduler.scheduleJob(job, trigger);
         } catch (SchedulerException se) {
-            log.error("When init job", se);
+            LOG.error("When init job", se);
         }
     }
 
@@ -47,8 +48,8 @@ public class SchedulerManager {
         if (scheduler != null) {
             try {
                 scheduler.shutdown();
-            } catch (SchedulerException se) {
-                log.error("When shutdown scheduler", se);
+            } catch (SchedulerException e) {
+                LOG.error("When shutdown scheduler", e);
             }
         }
     }
